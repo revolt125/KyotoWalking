@@ -5,10 +5,10 @@ html {
 }
 
 body {
-	height: 3000px;
+	height: 6000px;
 	background: #f2f0ed url("../img/bg-noise.png") repeat;
 	font-family: "Noto Sans TC", sans-serif;
-	margin-top: 106px;
+	margin-top: 76px;
 }
 
 .container {
@@ -23,7 +23,7 @@ nav {
 		// z-index: 999;
 
 		.logoimg {
-			height: 80px;
+			height: 50px;
 		}
 
 		.nav_divide {
@@ -162,6 +162,109 @@ nav {
 		.timeline-section:after,
 		.timeline-pointer:after {
 			display: none;
+		}
+	}
+}
+
+#season {
+	.parallax {
+		height: 100vh;
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		// @media (max-width: 996px) {
+		// 	background-position: right;
+		// }
+		&.spring {
+			// width: 100%;
+			background-image: url(/img/spring.webp);
+		}
+		&.summer {
+			background-image: url(/img/summer2.jpg);
+		}
+		&.autumn {
+			background-image: url(/img/autumn2.jpg);
+		}
+		&.winter {
+			background-image: url(/img/winter.jpg);
+		}
+		&:nth-child(even) {
+			div.filter {
+				.season-box {
+					left: 3rem;
+					p {
+						left: -3rem;
+						padding: 0.5rem 0.5rem 0.5rem 3rem;
+						&::after {
+							left: 0;
+						}
+					}
+				}
+			}
+		}
+		&:nth-child(odd) {
+			div.filter {
+				.season-box {
+					right: 3rem;
+					p {
+						right: -3rem;
+						padding: 0.5rem;
+						&::after {
+							right: 0;
+						}
+					}
+				}
+			}
+		}
+		div.filter {
+			background-color: rgba(0, 0, 0, 0.5);
+			width: 100%;
+			min-height: 100%;
+			position: relative;
+			.season-box {
+				position: absolute;
+				top: 3rem;
+				// width: 100%;
+				.season-box-title {
+					// width: 30px;
+					text-align: center;
+					display: inline-block;
+					font-family: "Rowdies", cursive;
+					font-size: 3rem;
+					font-weight: 600;
+					text-decoration: underline;
+					text-decoration-thickness: 2px;
+					text-underline-offset: 1rem;
+					line-height: 4rem;
+					background-color: rgba(255, 255, 255, 0.7);
+					color: rgba(0, 0, 0, 0.6);
+					// border: 2px rgba(255, 255, 255, 0.7) white;
+					outline: 2px solid rgba(255, 255, 255, 0.7);
+					outline-offset: 5px;
+					padding: 1rem 1.3rem;
+				}
+				.season-box-p {
+					position: relative;
+					p {
+						position: absolute;
+						margin-top: 3rem;
+						font-size: 1.2rem;
+						font-weight: 500;
+						width: 40vw;
+						color: rgba(0, 0, 0, 0.9);
+						background-color: rgba(255, 255, 255, 0.7);
+						&::after {
+							content: "";
+							position: absolute;
+
+							bottom: -0.4rem;
+							width: 70%;
+							border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+						}
+					}
+				}
+			}
 		}
 	}
 }

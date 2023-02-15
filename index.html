@@ -15,8 +15,14 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css"
 		/> -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
 			href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Rowdies&display=swap"
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="./css/bootstrap.css" />
@@ -475,6 +481,58 @@
 					</div>
 				</div>
 			</div>
+			<div class="parallax spring">
+				<div class="filter">
+					<div class="season-box">
+						<span class="season-box-title">春</span>
+						<div class="season-box-p">
+							<p>
+								京都的春天是溫柔的，而盛開的櫻花使這個季節成為熱門的造訪時間。溫度在三月中旬開始逐日升高，遊客在戶外遊玩時會開始感覺到京都的溫暖和晴朗。如果您喜歡活動筋骨，這個季節最適合到京都健走！
+							</p>
+							<div class="my-line"></div>
+						</div>
+					</div>
+				</div>
+
+				<!-- https://travo.guide/japan/kyoto/philosophers-walk/ -->
+			</div>
+			<div class="parallax summer">
+				<div class="filter">
+					<div class="season-box">
+						<span class="season-box-title">夏</span>
+						<div class="season-box-p">
+							<p>
+								豪壯華麗的祇園祭，是擁有1,100年傳統的京都八坂神社所舉辦的祭禮。其與大阪天神祭、東京神田祭齊名，為日本三大祭之一。在炎熱的盛夏夜晚，有著抬著神轎的隊伍、廟會小攤販，和穿著夏日浴衣的當地人和觀光客共襄盛舉。
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- https://caede-kyoto-asia.com/%E9%81%8A%E8%A6%BD%E4%BA%AC%E9%83%BD%E5%BA%A6%E9%81%8E%E5%A4%8F%E5%A4%A9%E5%90%A7%E3%80%82-%E5%A4%8F%E5%A4%A9%E7%9A%84%E4%BA%AC%E9%83%BD%EF%BC%8C%E4%BB%8B%E7%B4%B9%E6%8E%A8%E8%96%A6%E7%9A%84%E8%A7%80/ -->
+			</div>
+			<div class="parallax autumn">
+				<div class="filter">
+					<div class="season-box">
+						<span class="season-box-title">秋</span>
+						<div class="season-box-p">
+							<p>
+								楓紅時節也是京都的旅遊旺季，古色古香的街道配上紅葉美景，顯得特別優雅雋永。京都的賞楓名勝非常多，到了夜晚別錯過其他季節沒有的夜間點燈。楓葉在燈光的陪襯下更顯夢幻。
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="parallax winter">
+				<div class="filter">
+					<div class="season-box">
+						<span class="season-box-title">冬</span>
+						<div class="season-box-p">
+							<p>
+								京都周遭的群山在夏天助長了潮濕悶熱的天氣，在冬天則因為冷風由山上吹下而造成寒冷的天氣。儘管溫度低，京都並不常下雪。如果真的下雪了，記得拿出您的相機：歷史悠久的京都被白雪覆蓋的美麗會讓人難以忘懷。
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
 		<!-- seasons -->
 		<script src="./js/bootstrap.bundle.min.js"></script>
@@ -534,6 +592,18 @@
 				hamburger.classList.toggle("is-active");
 				// Do something else, like open/close menu
 			});
+		</script>
+		<script src="./js/snowflakes.js"></script>
+		<script>
+			var snow = new Snowflakes({
+				container: document.querySelector("#season"),
+				color: "#000000",
+				count: 15,
+				speed: 3,
+				maxSize: 100,
+				wind: false,
+			});
+			console.log(snow.container);
 		</script>
 	</body>
 </html>
