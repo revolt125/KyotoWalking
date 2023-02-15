@@ -67,6 +67,7 @@ nav {
 			position: relative;
 			text-align: center;
 			font-weight: bold;
+			cursor: pointer;
 
 			&::after {
 				display: none;
@@ -117,7 +118,7 @@ nav {
 	.cover {
 		overflow: hidden;
 		box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
-
+		border-radius: 0.5rem;
 		img {
 			transition: 0.4s;
 

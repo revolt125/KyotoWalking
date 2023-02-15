@@ -48,6 +48,7 @@ nav.navbar ul li a {
   position: relative;
   text-align: center;
   font-weight: bold;
+  cursor: pointer;
 }
 nav.navbar ul li a::after {
   display: none;
@@ -90,6 +91,7 @@ nav.navbar .navbar-nav .nav-link:hover {
 #about .cover {
   overflow: hidden;
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
 }
 #about .cover img {
   transition: 0.4s;
