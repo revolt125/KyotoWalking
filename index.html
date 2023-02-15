@@ -481,7 +481,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="parallax spring">
+			<div class="parallax spring falling-spring">
 				<div class="filter">
 					<div class="season-box">
 						<span class="season-box-title">春</span>
@@ -496,7 +496,7 @@
 
 				<!-- https://travo.guide/japan/kyoto/philosophers-walk/ -->
 			</div>
-			<div class="parallax summer">
+			<div class="parallax summer falling-summer">
 				<div class="filter">
 					<div class="season-box">
 						<span class="season-box-title">夏</span>
@@ -509,7 +509,7 @@
 				</div>
 				<!-- https://caede-kyoto-asia.com/%E9%81%8A%E8%A6%BD%E4%BA%AC%E9%83%BD%E5%BA%A6%E9%81%8E%E5%A4%8F%E5%A4%A9%E5%90%A7%E3%80%82-%E5%A4%8F%E5%A4%A9%E7%9A%84%E4%BA%AC%E9%83%BD%EF%BC%8C%E4%BB%8B%E7%B4%B9%E6%8E%A8%E8%96%A6%E7%9A%84%E8%A7%80/ -->
 			</div>
-			<div class="parallax autumn">
+			<div class="parallax autumn falling-autumn">
 				<div class="filter">
 					<div class="season-box">
 						<span class="season-box-title">秋</span>
@@ -521,13 +521,13 @@
 					</div>
 				</div>
 			</div>
-			<div class="parallax winter">
+			<div class="parallax winter falling-winter">
 				<div class="filter">
 					<div class="season-box">
 						<span class="season-box-title">冬</span>
 						<div class="season-box-p">
 							<p>
-								京都周遭的群山在夏天助長了潮濕悶熱的天氣，在冬天則因為冷風由山上吹下而造成寒冷的天氣。儘管溫度低，京都並不常下雪。如果真的下雪了，記得拿出您的相機：歷史悠久的京都被白雪覆蓋的美麗會讓人難以忘懷。
+								京都周遭的群山在夏天助長了潮濕悶熱的天氣，在冬天則因為冷風由山上吹下而造成寒冷的天氣。儘管溫度低，京都並不常下雪。如果真的下雪了，記得拿出您的相機，歷史悠久的京都被白雪覆蓋的美麗會讓人難以忘懷。
 							</p>
 						</div>
 					</div>
@@ -593,17 +593,6 @@
 				// Do something else, like open/close menu
 			});
 		</script>
-		<script src="./js/snowflakes.js"></script>
-		<script>
-			var snow = new Snowflakes({
-				container: document.querySelector("#season"),
-				color: "#000000",
-				count: 15,
-				speed: 3,
-				maxSize: 100,
-				wind: false,
-			});
-			console.log(snow.container);
-		</script>
+		<script src="./js/falling.js"></script>
 	</body>
 </html>

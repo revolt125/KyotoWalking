@@ -233,13 +233,13 @@ nav {
 					display: inline-block;
 					font-family: "Rowdies", cursive;
 					font-size: 3rem;
-					font-weight: 600;
+					font-weight: 700;
 					text-decoration: underline;
 					text-decoration-thickness: 2px;
 					text-underline-offset: 1rem;
 					line-height: 4rem;
 					background-color: rgba(255, 255, 255, 0.7);
-					color: rgba(0, 0, 0, 0.6);
+					color: #444444;
 					// border: 2px rgba(255, 255, 255, 0.7) white;
 					outline: 2px solid rgba(255, 255, 255, 0.7);
 					outline-offset: 5px;
@@ -253,7 +253,7 @@ nav {
 						font-size: 1.2rem;
 						font-weight: 500;
 						width: 40vw;
-						color: rgba(0, 0, 0, 0.9);
+						color: #444444;
 						background-color: rgba(255, 255, 255, 0.7);
 						&::after {
 							content: "";
@@ -268,4 +268,65 @@ nav {
 			}
 		}
 	}
+}
+
+@mixin falling() {
+	width: 100%;
+	transform: translate(0, 0);
+	// transform: translateY(unset);
+	overflow: hidden;
+}
+
+.falling-spring {
+	@include falling();
+}
+
+.falling-summer {
+	@include falling();
+}
+
+.falling-autumn {
+	@include falling();
+}
+
+.falling-winter {
+	@include falling();
+}
+
+@mixin leaf-scene($fallingBg) {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	transform-style: preserve-3d;
+
+	div {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 20px;
+		height: 20px;
+		// background: url(../img/snow.svg)
+		// 	no-repeat;
+		background: $fallingBg;
+		background-size: 100%;
+		transform-style: preserve-3d;
+	}
+}
+
+.leaf-scene-spring {
+	@include leaf-scene(url(../img/sakura.svg) no-repeat);
+}
+
+.leaf-scene-summer {
+	@include leaf-scene(url(../img/summer.svg) no-repeat);
+}
+
+.leaf-scene-autumn {
+	@include leaf-scene(url(../img/leaf.svg) no-repeat);
+}
+
+.leaf-scene-winter {
+	@include leaf-scene(url(../img/snow.svg) no-repeat);
 }
