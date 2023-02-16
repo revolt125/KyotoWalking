@@ -570,18 +570,6 @@
 					behavior: "smooth",
 				});
 			});
-
-			// function scrollTo(element, to, duration) {
-			// 	if (duration <= 0) return;
-			// 	var difference = to - element.scrollTop;
-			// 	var perTick = (difference / duration) * 10;
-
-			// 	setTimeout(function () {
-			// 		element.scrollTop = element.scrollTop + perTick;
-			// 		if (element.scrollTop === to) return;
-			// 		scrollTo(element, to, duration - 10);
-			// 	}, 10);
-			// }
 		</script>
 		<script>
 			// Look for .hamburger
@@ -596,26 +584,23 @@
 		<script src="./js/falling.js"></script>
 		<script>
 			window.addEventListener("load", function () {
-				// 取得背景元素
-				var bg = document.querySelectorAll(".parallax");
-				// 計算背景元素的中心點
-				var bgCenter = [];
-				bg.forEach((element) => {
-					bgCenter.push(element.offsetTop + element.offsetHeight / 2);
-				});
-				// var bgCenter[] = bg.offsetTop + bg.offsetHeight / 2;
-				console.log(bgCenter);
 				window.addEventListener("scroll", function () {
-					// 取得目前視窗的中心點
-					var viewCenter = window.pageYOffset + window.innerHeight / 2;
+					// 取得背景元素
+					var bg = document.querySelectorAll(".parallax");
 					for (let i = 0; i < bg.length; i++) {
+						// 計算背景元素的中心點
+						var bgCenter = [];
+						bg.forEach((element) => {
+							bgCenter.push(element.offsetTop + element.offsetHeight / 2);
+						});
+
+						// 取得目前視窗的中心點
+						var viewCenter = window.pageYOffset + window.innerHeight / 2;
+						// 計算兩者的距離差
 						var distance = viewCenter - bgCenter[i];
+						// 設定背景位置
 						bg[i].style.backgroundPositionY = distance * 0.5 + "px";
 					}
-					// 計算兩者的距離差
-					// var distance = viewCenter - bgCenter;
-					// 設定背景位置
-					// bg.style.backgroundPositionY = distance * 0.5 + "px";
 				});
 			});
 		</script>

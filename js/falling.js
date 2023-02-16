@@ -17,6 +17,11 @@ var LeafScene = function (el) {
 	this.width = this.viewport.offsetWidth;
 	this.height = this.viewport.offsetHeight;
 
+	window.addEventListener("resize", () => {
+		this.width = this.viewport.offsetWidth;
+		this.height = this.viewport.offsetHeight;
+	});
+
 	// animation helper
 	this.timer = 0;
 
@@ -195,14 +200,11 @@ LeafScene.prototype.render = function () {
 	requestAnimationFrame(this.render.bind(this));
 };
 
-// start up leaf scene
-
 var springContainer = document.querySelector(".falling-spring"),
 	leaves = new LeafScene(springContainer);
 console.log(springContainer);
 leaves.init();
 leaves.render();
-
 
 var summerContainer = document.querySelector(".falling-summer"),
 	leaves = new LeafScene(summerContainer);
