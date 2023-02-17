@@ -20,7 +20,7 @@ body {
 
 nav {
 	&.navbar {
-		background-color: rgba(255, 255, 255, 0.95);
+		background-color: rgb(255, 255, 255);
 		// position: sticky;
 		// top: 0;
 		// z-index: 999;
@@ -209,7 +209,7 @@ nav {
 			.spot-title {
 				// padding: 50%;
 				color: rgba(240, 240, 240, 0.9);
-				font-family: "Rowdies", cursive;
+				//font-family: "Rowdies", cursive;
 				font-size: 2rem;
 				font-weight: 500;
 				text-decoration: underline;
