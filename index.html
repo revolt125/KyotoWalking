@@ -25,6 +25,10 @@
 			href="https://fonts.googleapis.com/css2?family=Rowdies&display=swap"
 			rel="stylesheet"
 		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="./css/bootstrap.css" />
 		<link rel="stylesheet" href="./css/hamburgers.css" />
 		<link rel="stylesheet" href="./css/main.css" />
@@ -34,9 +38,9 @@
 		<!-- nav start -->
 		<nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top">
 			<div class="container">
-				<a class="navbar-brand" href="#"
-					><img class="logoimg" src="./img/logo.png" alt="漫遊京都"
-				/></a>
+				<a class="navbar-brand" href="#">
+					<img class="logoimg" src="./img/logo.png" alt="漫遊京都" />
+				</a>
 				<button
 					class="navbar-toggler border-0 hamburger hamburger--squeeze"
 					type="button"
@@ -173,7 +177,6 @@
 				</div>
 			</div>
 		</section>
-		<hr class="container" />
 		<!-- about end -->
 		<!-- viewpoint start -->
 		<section id="viewpoint" class="py-3">
@@ -187,7 +190,7 @@
 					</div>
 				</div>
 				<div id="spot-container" class="row">
-					<div class="col-sm-6 col-lg-4 my-2">
+					<!-- <div class="col-sm-6 col-lg-4 my-2">
 						<div class="card text-end">
 							<img
 								src="https://dummyimage.com/600x400/000/fff"
@@ -211,149 +214,88 @@
 								>
 									詳細資訊
 								</button>
-							</div> -->
+							</div> 
 						</div>
-					</div>
+					</div>-->
 				</div>
 			</div>
 			<!-- modal -->
-			<div class="modal-box">
-				<div
+			<div id="modal-box">
+				<!-- <div
 					class="modal fade"
 					id="detail0"
 					tabindex="-1"
 					aria-labelledby="detailModalLabel1"
 					aria-hidden="true"
 				>
-					<div class="modal-dialog modal-dialog-centered">
+					<div class="modal-dialog modal-dialog-centered modal-xl">
 						<div class="modal-content">
-							<div class="modal-header">
-								<h5 class="modal-title" id="detailModalLabel1">Modal title1</h5>
-								<button
-									type="button"
-									class="btn-close"
-									data-bs-dismiss="modal"
-									aria-label="Close"
-								></button>
+							<div class="modal-body">
+								<div class="row">
+									<div class="col-12 col-md-12 col-lg-8">
+										<div
+											id="carouselExampleControls"
+											class="carousel slide"
+											data-bs-ride="carousel"
+										>
+											<div class="carousel-inner">
+												<div class="carousel-item active">
+													<img
+														src="./img/spot/spot_1.jpg"
+														class="d-block w-100"
+														alt="..."
+													/>
+												</div>
+												<div class="carousel-item">
+													<img src="./img/spot/spot_2.jpg"." class="d-block
+													w-100" alt="..." />
+												</div>
+												<div class="carousel-item">
+													<img src="./img/spot/spot_3.jpg"" class="d-block
+													w-100" alt="..." />
+												</div>
+											</div>
+											<button
+												class="carousel-control-prev"
+												type="button"
+												data-bs-target="#carouselExampleControls"
+												data-bs-slide="prev"
+											>
+												<span
+													class="carousel-control-prev-icon"
+													aria-hidden="true"
+												></span>
+												<span class="visually-hidden">Previous</span>
+											</button>
+											<button
+												class="carousel-control-next"
+												type="button"
+												data-bs-target="#carouselExampleControls"
+												data-bs-slide="next"
+											>
+												<span
+													class="carousel-control-next-icon"
+													aria-hidden="true"
+												></span>
+												<span class="visually-hidden">Next</span>
+											</button>
+										</div>
+									</div>
+									<div class="col-12 col-md-12 col-lg-4 mt-2 mt-sm-2 mt-md-0">
+										<h3 class="text-center text-lg-center">清水寺</h3>
+										<hr />
+										<p>
+											可以俯瞰京都全景的清水寺，就坐落於京都東邊的一座小山上。寺廟內以巨大柱子支撐的高台，可以說是日本最著名的「景像」之一。清水寺提供的不僅是優美的景色。其實您在踏上造訪寺廟的旅程時，體驗就已經開始了。
+										</p>
+									</div>
+								</div>
 							</div>
-							<div class="modal-body">...</div>
 						</div>
 					</div>
-				</div>
-				<div
-					class="modal fade"
-					id="exampleModal2"
-					tabindex="-1"
-					aria-labelledby="exampleModalLabel2"
-					aria-hidden="true"
-				>
-					<div class="modal-dialog modal-dialog-centered">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h5 class="modal-title" id="exampleModalLabel">Modal title2</h5>
-								<button
-									type="button"
-									class="btn-close"
-									data-bs-dismiss="modal"
-									aria-label="Close"
-								></button>
-							</div>
-							<div class="modal-body">...</div>
-						</div>
-					</div>
-				</div>
-				<div
-					class="modal fade"
-					id="exampleModal3"
-					tabindex="-1"
-					aria-labelledby="exampleModalLabel3"
-					aria-hidden="true"
-				>
-					<div class="modal-dialog modal-dialog-centered">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h5 class="modal-title" id="exampleModalLabel">Modal title3</h5>
-								<button
-									type="button"
-									class="btn-close"
-									data-bs-dismiss="modal"
-									aria-label="Close"
-								></button>
-							</div>
-							<div class="modal-body">...</div>
-						</div>
-					</div>
-				</div>
-				<div
-					class="modal fade"
-					id="exampleModal4"
-					tabindex="-1"
-					aria-labelledby="exampleModalLabel4"
-					aria-hidden="true"
-				>
-					<div class="modal-dialog modal-dialog-centered">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h5 class="modal-title" id="exampleModalLabel">Modal title4</h5>
-								<button
-									type="button"
-									class="btn-close"
-									data-bs-dismiss="modal"
-									aria-label="Close"
-								></button>
-							</div>
-							<div class="modal-body">...</div>
-						</div>
-					</div>
-				</div>
-				<div
-					class="modal fade"
-					id="exampleModal5"
-					tabindex="-1"
-					aria-labelledby="exampleModalLabel5"
-					aria-hidden="true"
-				>
-					<div class="modal-dialog modal-dialog-centered">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h5 class="modal-title" id="exampleModalLabel">Modal title5</h5>
-								<button
-									type="button"
-									class="btn-close"
-									data-bs-dismiss="modal"
-									aria-label="Close"
-								></button>
-							</div>
-							<div class="modal-body">...</div>
-						</div>
-					</div>
-				</div>
-				<div
-					class="modal fade"
-					id="exampleModal6"
-					tabindex="-1"
-					aria-labelledby="exampleModalLabel6"
-					aria-hidden="true"
-				>
-					<div class="modal-dialog modal-dialog-centered">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h5 class="modal-title" id="exampleModalLabel">Modal title6</h5>
-								<button
-									type="button"
-									class="btn-close"
-									data-bs-dismiss="modal"
-									aria-label="Close"
-								></button>
-							</div>
-							<div class="modal-body">...</div>
-						</div>
-					</div>
-				</div>
+				</div> -->
 			</div>
 		</section>
 		<!-- viewpoint end -->
-		<hr class="container" />
 		<!-- seasons -->
 		<section id="season" class="py-3">
 			<div class="container">

@@ -4,8 +4,9 @@ html {
 
 body {
   height: 6000px;
-  background: #f2f0ed url("../img/bg-noise.png") repeat;
-  font-family: "Noto Sans TC", sans-serif;
+  background: url("../img/bg-new.png") repeat;
+  font-family: "Noto Serif TC", serif;
+  font-weight: 500;
   margin-top: 76px;
 }
 
@@ -136,19 +137,57 @@ nav.navbar .navbar-nav .nav-link:hover {
   }
 }
 
+#viewpoint {
+  background-image: url("../img/bg-new2.png");
+  background-size: auto;
+}
 #viewpoint #spot-container .card {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  cursor: pointer;
+}
+#viewpoint #spot-container .card:hover img {
+  transform: scale(1.2);
+}
+#viewpoint #spot-container .card .filter {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(68, 68, 68, 0.6);
+  opacity: 0;
+  transition: 0.5s all ease;
+}
+#viewpoint #spot-container .card:hover .filter {
+  opacity: 1;
 }
 #viewpoint #spot-container .card img {
-  min-height: 100%;
-  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: 0.5s all ease;
 }
-#viewpoint #spot-container .card img:hover {
-  transform: scale(1.2);
+#viewpoint #spot-container .card .spot-title {
+  color: rgba(240, 240, 240, 0.9);
+  font-family: "Rowdies", cursive;
+  font-size: 2rem;
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+  display: inline-block;
+  opacity: 0;
+  transition: 0.5s all ease;
+}
+#viewpoint #spot-container .card:hover .spot-title {
+  opacity: 1;
+}
+#viewpoint #modal-box .modal-content {
+  background-color: #EDEDEA;
+}
+#viewpoint #modal-box .modal-content p {
+  font-size: 1.1rem;
 }
 
 #season .parallax {
