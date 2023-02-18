@@ -8,7 +8,7 @@ body {
 	height: 6000px;
 	background: url("../img/bg-new.png") repeat;
 	// font-family: "Noto Sans TC", sans-serif;
-	font-family: "Noto Serif TC", serif;
+	font-family: "Noto Serif TC", "source-han-serif-tc", serif;
 	//font-size: 2rem;
 	font-weight: 500;
 	margin-top: 76px;
@@ -227,13 +227,13 @@ nav {
 	}
 	#modal-box {
 		.modal-content {
-			background-color: #EDEDEA;
+			background-color: #ededea;
 			// .modal-header {
 			// 	border: none;
 			// }
-            p{
-                font-size: 1.1rem;
-            }
+			p {
+				font-size: 1.1rem;
+			}
 		}
 	}
 }
@@ -303,7 +303,7 @@ nav {
 					// width: 30px;
 					text-align: center;
 					display: inline-block;
-					//font-family: "Rowdies", cursive;
+					font-family: "Rowdies", cursive;
 					font-size: 3rem;
 					font-weight: 700;
 					text-decoration: underline;

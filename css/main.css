@@ -5,7 +5,7 @@ html {
 body {
   height: 6000px;
   background: url("../img/bg-new.png") repeat;
-  font-family: "Noto Serif TC", serif;
+  font-family: "Noto Serif TC", "source-han-serif-tc", serif;
   font-weight: 500;
   margin-top: 76px;
 }
@@ -183,7 +183,7 @@ nav.navbar .navbar-nav .nav-link:hover {
   opacity: 1;
 }
 #viewpoint #modal-box .modal-content {
-  background-color: #EDEDEA;
+  background-color: #ededea;
 }
 #viewpoint #modal-box .modal-content p {
   font-size: 1.1rem;
@@ -241,6 +241,7 @@ nav.navbar .navbar-nav .nav-link:hover {
 #season .parallax div.filter .season-box .season-box-title {
   text-align: center;
   display: inline-block;
+  font-family: "Rowdies", cursive;
   font-size: 3rem;
   font-weight: 700;
   text-decoration: underline;
