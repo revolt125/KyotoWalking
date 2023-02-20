@@ -155,7 +155,7 @@ LeafScene.prototype.init = function () {
 		this.world.appendChild(leaf.el);
 	}
 
-	console.log("TEST:" + this.viewport.classList[0]);
+	//console.log("TEST:" + this.viewport.classList[0]);
 
 	switch (this.viewport.classList[1]) {
 		case "spring":
