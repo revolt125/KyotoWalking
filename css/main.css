@@ -332,7 +332,7 @@ footer .footer-icon-group {
     bottom: 31%;
   }
 }
-footer .footer-icon-group a:hover {
+footer .footer-icon-group a {
   text-decoration: none;
 }
 footer .footer-icon-group i {
@@ -346,8 +346,6 @@ footer .footer-icon-group i:hover {
 footer .footer-copyright {
   font-size: 15px;
   border-top: 1px solid;
-  max-width: 1220px;
-  /* ↑ 底線對齊上面LOGO與訂位 */
   margin: 0 auto;
   margin-top: 60px;
   padding: 30px 0;
