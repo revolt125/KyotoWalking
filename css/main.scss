@@ -345,6 +345,24 @@ nav {
 	}
 }
 
+//kyoto goods
+#goodfood {
+	.goods_content {
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		p {
+			color: #444444;
+			font-size: 1.1rem;
+		}
+
+		@media (max-width: 768px) {
+			h3 {
+				text-align: center !important;
+			}
+		}
+	}
+}
+
 // footer
 footer {
 	background-color: #e5e6e7;

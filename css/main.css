@@ -280,6 +280,20 @@ nav.navbar .navbar-nav .nav-link:hover {
   border-bottom: 2px solid rgba(255, 255, 255, 0.7);
 }
 
+#goodfood .goods_content {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+#goodfood .goods_content p {
+  color: #444444;
+  font-size: 1.1rem;
+}
+@media (max-width: 768px) {
+  #goodfood .goods_content h3 {
+    text-align: center !important;
+  }
+}
+
 footer {
   background-color: #e5e6e7;
   position: relative;
