@@ -70,6 +70,9 @@
 	</head>
 
 	<body>
+		<a id="scrollToTopButton">
+			<i class="fa-solid fa-caret-up"></i>
+		</a>
 		<!-- nav start -->
 		<nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top">
 			<div class="container">
@@ -129,20 +132,72 @@
 			</div>
 		</nav>
 		<!-- nav end -->
-		<!-- <section id="banner">
-			<div class="container-fluid">
+		<section id="banner">
+			<!-- <div class="container-fluid">
 				<div class="banner">
 					<div class="ratio ratio-16x9">
 						<iframe
 							class="embed-responsive-item"
 							src="https://www.youtube.com/embed/ulVRwaxwqgo"
 							allowfullscreen
-						>
-						</iframe>
+						></iframe>
 					</div>
 				</div>
+			</div> -->
+			<div id="carouselKyoto" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-indicators">
+					<button
+						type="button"
+						data-bs-target="#carouselKyoto"
+						data-bs-slide-to="0"
+						class="active"
+						aria-current="true"
+						aria-label="Slide 1"
+					></button>
+					<button
+						type="button"
+						data-bs-target="#carouselKyoto"
+						data-bs-slide-to="1"
+						aria-label="Slide 2"
+					></button>
+					<button
+						type="button"
+						data-bs-target="#carouselKyoto"
+						data-bs-slide-to="2"
+						aria-label="Slide 3"
+					></button>
+				</div>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="./img/banner1.jpg" class="d-block" alt="..." />
+					</div>
+					<div class="carousel-item">
+						<img src="./img/banner2.webp" class="d-block" alt="..." />
+					</div>
+					<div class="carousel-item">
+						<img src="./img/banner3.webp" class="d-block" alt="..." />
+					</div>
+				</div>
+				<button
+					class="carousel-control-prev"
+					type="button"
+					data-bs-target="#carouselKyoto"
+					data-bs-slide="prev"
+				>
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button
+					class="carousel-control-next"
+					type="button"
+					data-bs-target="#carouselKyoto"
+					data-bs-slide="next"
+				>
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
 			</div>
-		</section> -->
+		</section>
 		<!-- about stat -->
 		<section id="about" class="py-3">
 			<div class="container">
@@ -641,6 +696,32 @@
 						// 設定背景位置
 						bg[i].style.backgroundPositionY = distance * 0.5 + "px";
 					}
+				});
+			});
+		</script>
+		<script>
+			// 取得頂部按鈕
+			const scrollToTopButton = document.getElementById("scrollToTopButton");
+
+			// 取得視窗高度
+			const height = window.innerHeight;
+
+			//監聽滾動事件
+			window.onscroll = function () {
+				// 滾動超過視窗高度時顯示回到頂部按鈕
+				if (document.documentElement.scrollTop > height) {
+					scrollToTopButton.classList.add("show");
+				} else {
+					scrollToTopButton.classList.remove("show");
+				}
+			};
+
+			// 監聽回到頂部按鈕事件
+			scrollToTopButton.addEventListener("click", function () {
+				// 滾動到頁面頂部
+				window.scrollTo({
+					top: 0,
+					behavior: "smooth",
 				});
 			});
 		</script>

@@ -18,9 +18,39 @@ body {
 	max-width: 1140px;
 }
 
+#scrollToTopButton {
+	//display: none; /* 隐藏“回到顶部”按钮 */
+	height: 40px;
+	width: 40px;
+	line-height: 40px;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	background-color: $goldColor;
+	color: #fff;
+	text-align: center;
+	border: none;
+	border-radius: 50%;
+	z-index: 999;
+	cursor: pointer;
+	opacity: 0; /* 初始时透明度为 0 */
+	transition: opacity 0.3s ease; /* 添加过渡效果 */
+	i {
+		font-size: 30px;
+		line-height: 45px;
+	}
+	&.show {
+		opacity: 1; /* 透明度为 1 时显示按钮 */
+		transition: all 0.3s ease;
+		&:hover {
+			background: #414042;
+		}
+	}
+}
+
 nav {
 	&.navbar {
-		background-color: rgb(255, 255, 255);
+		background-color: rgba(253, 253, 253, 0.98);
 		// position: sticky;
 		// top: 0;
 		// z-index: 999;
@@ -167,6 +197,16 @@ nav {
 		.timeline-pointer:after {
 			display: none;
 		}
+	}
+}
+
+#banner {
+	//height: calc(100vh - 76px);
+	img {
+		width: 100vw;
+		height: calc(100vh - 76px);
+		object-fit: cover;
+		object-position: 50% 50%;
 	}
 }
 
@@ -347,6 +387,8 @@ nav {
 
 //kyoto goods
 #goodfood {
+	background-image: url("../img/bg-new2.png");
+	background-size: auto;
 	.goods_content {
 		padding-top: 1rem;
 		padding-bottom: 1rem;
