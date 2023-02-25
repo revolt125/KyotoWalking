@@ -674,6 +674,31 @@
 				hamburger.classList.toggle("is-active");
 				// Do something else, like open/close menu
 			});
+
+			var navToggle = document.querySelectorAll(".nav-link");
+
+			navToggle.forEach((element) => {
+				element.addEventListener("click", function () {
+					var navHasClass = document
+						.querySelector("#navbarContent")
+						.classList.contains("show");
+					var navHasActive = document
+						.querySelector(".navbar-toggler")
+						.classList.contains("is-active");
+					if (navHasClass) {
+						document.querySelector("#navbarContent").classList.remove("show");
+						// document
+						// 	.querySelector("#navbarContent")
+						// 	.classList.add("collasping");
+					}
+
+					if (navHasActive) {
+						document
+							.querySelector(".navbar-toggler")
+							.classList.remove("is-active");
+					}
+				});
+			});
 		</script>
 		<script src="./js/spot.js"></script>
 		<script src="./js/falling.js"></script>
