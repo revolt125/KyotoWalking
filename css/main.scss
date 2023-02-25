@@ -291,16 +291,16 @@ nav {
 		// }
 		&.spring {
 			// width: 100%;
-			background-image: url(/img/spring.webp);
+			background-image: url(../img/spring.webp);
 		}
 		&.summer {
-			background-image: url(/img/summer2.jpg);
+			background-image: url(../img/summer2.jpg);
 		}
 		&.autumn {
-			background-image: url(/img/autumn2.jpg);
+			background-image: url(../img/autumn2.jpg);
 		}
 		&.winter {
-			background-image: url(/img/winter2.jpg);
+			background-image: url(../img/winter2.jpg);
 		}
 		&:nth-child(even) {
 			div.filter {

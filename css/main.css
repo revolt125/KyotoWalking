@@ -235,16 +235,16 @@ nav.navbar .navbar-nav .nav-link:hover {
   background-size: cover;
 }
 #season .parallax.spring {
-  background-image: url(/img/spring.webp);
+  background-image: url(../img/spring.webp);
 }
 #season .parallax.summer {
-  background-image: url(/img/summer2.jpg);
+  background-image: url(../img/summer2.jpg);
 }
 #season .parallax.autumn {
-  background-image: url(/img/autumn2.jpg);
+  background-image: url(../img/autumn2.jpg);
 }
 #season .parallax.winter {
-  background-image: url(/img/winter2.jpg);
+  background-image: url(../img/winter2.jpg);
 }
 #season .parallax:nth-child(even) div.filter .season-box {
   left: 3rem;
